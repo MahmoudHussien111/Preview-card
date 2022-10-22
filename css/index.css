@@ -1,0 +1,97 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.the-dad {
+  display: flex;
+  justify-content: space-between;
+  width: 548px;
+  height: fit-content;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.the-dad .image img {
+  max-width: 100%;
+  height: 100%;
+}
+.the-dad .info {
+  padding: 15px;
+  width: 561px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.the-dad .info span {
+  font-size: 14px;
+  color: hsl(158, 36%, 37%);
+  letter-spacing: 4px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.the-dad .info h2 {
+  width: 197px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+.the-dad .info p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 15px 0px;
+  color: #a9aba4;
+}
+.the-dad .info p.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.the-dad .info p.price span:not(small.line) {
+  text-decoration: none;
+  display: inline-block;
+  color: #295b3a;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+}
+.the-dad .info p.price small.line {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.the-dad .info button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: hsl(140deg 38% 26%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.the-dad .info button ion-icon {
+  font-size: 16px;
+  margin-right: 10px;
+}
+@media (max-width: 375px) {
+  .the-dad {
+    display: block;
+    width: 375px;
+    margin: 30px;
+  }
+  .the-dad .image {
+  }
+  .the-dad .info {
+    width: calc(100% - 44px);
+  }
+}
